@@ -33,7 +33,7 @@ if opcao_disco_grade == "0":
     exec(open("discos.py").read())
 
 
-def disco_grade():
+def disco_grade_20_28():
     global opcao_disco_grade
     if opcao_disco_grade == "1":
         os.system("cls")
@@ -106,7 +106,7 @@ def disco_grade():
         print("")
 
         input("Pressione enter para voltar...")
-        disco_grade()
+        disco_grade_20_28()
 
     if avista1 == "2":
         valor_avista = percent(posipistr + "*3%")
@@ -117,8 +117,7 @@ def disco_grade():
         print("")
 
         input("Pressione enter para voltar...")
-        disco_grade()
+        disco_grade_20_28()
 
 
-disco_grade()
-  
+disco_grade_20_28()
