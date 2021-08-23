@@ -39,7 +39,7 @@ if opcao_disco_grade == "1":
 
 while True:
     try:
-        valor_desconto = str(input("4° Desconto ->"))
+        valor_desconto = str(input("Desconto ??? ->"))
         if ('a' <= valor_desconto <= 'z') or ('A' <= valor_desconto <= 'Z'):
             raise ValueError("O desconto precisa ser um número...")
     except ValueError as ve1:
@@ -78,7 +78,7 @@ ipi = percent(posdesc5str + "*5%")
 posipi = posdesc5 + ipi
 posipistr = str(posipi)
 print("")
-print("À Vista? (3% de Desconto)")
+print("A Vista? (3% de Desconto)")
 print("")
 print("1 - Sim")
 print("")
@@ -103,6 +103,9 @@ if avista1 == "1":
     posvalor_avistastr = str(posvalor_avista)
     print("")
     print("Valor Unitário Final: R$ " + posvalor_avistastr)
+
+input("Pressione enter para voltar...")
+exec(open("disco_grade.py").read())
 
 if avista1 == "2":
     print("")
