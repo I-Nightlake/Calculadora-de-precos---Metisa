@@ -48,7 +48,7 @@ def disco_grade_20_28():
 
     while True:
         try:
-            valor_desconto = str(input("Desconto ??? ->"))
+            valor_desconto = str(comma_to_point(input("Desconto ??? ->")))
             if ('a' <= valor_desconto <= 'z') or ('A' <= valor_desconto <= 'Z'):
                 raise ValueError("O desconto precisa ser um número...")
         except ValueError as ve1:
@@ -60,17 +60,16 @@ def disco_grade_20_28():
 
     while True:
         try:
-            valor1 = comma_to_point(input("Valor do item->"))
-            valor1format = str(valor1)
-            if ('a' <= valor1format <= 'z') or ('A' <= valor1format <= 'Z'):
+            valor1 = str(comma_to_point(input("Valor do item->")))
+            if ('a' <= valor1 <= 'z') or ('A' <= valor1 <= 'Z'):
                 raise ValueError("O valor do item precisam ser um número...")
         except ValueError as ve2:
             print(ve2)
         else:
             break
 
-    desc1 = percent(valor1format + "*5%")
-    posdesc1 = float(valor1format) - desc1
+    desc1 = percent(valor1 + "*5%")
+    posdesc1 = float(valor1) - desc1
     posdesc1str = str(posdesc1)
     desc2 = percent(posdesc1str + "*15%")
     posdesc2 = posdesc1 - desc2
