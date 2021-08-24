@@ -12,6 +12,8 @@ def comma_to_point(expression):
         expression = expression.replace(",", ".")
     return eval(expression)
 
+# Editar o valor em questão de tratamento de valores, caso erre, está pulando o código.
+
 
 os.system("cls")
 print("---Discos de Grade/Arado---")
@@ -32,6 +34,11 @@ print('4 - 30" para cima')
 print("")
 opcao_disco_grade = input("->")
 
+if opcao_disco_grade not in {"00", "0", "1", "2", "3", "4"}:
+    os.system("cls")
+    input("Comando Invalido, pressione enter para voltar...")
+    exec(open("disco_grade.py").read())
+
 if opcao_disco_grade == "00":
     exec(open("menu.py").read())
 
@@ -48,14 +55,15 @@ def disco_grade_20_28():
 
     while True:
         try:
-            valor_desconto = str(comma_to_point(input("Desconto ??? ->")))
-            if ('a' <= valor_desconto <= 'z') or ('A' <= valor_desconto <= 'Z'):
-                raise ValueError("O desconto precisa ser um número...")
+            valor_desconto = input("Desconto ??? ->")
+            if ("a" <= valor_desconto <= "z") or ("A" <= valor_desconto <= "Z") or valor_desconto == "":
+                raise ValueError("O desconto precisa ser um numero...")
         except ValueError as ve1:
             print(ve1)
         else:
             break
 
+    valor_desconto_format = str(comma_to_point(valor_desconto))
     print("")
 
     while True:
@@ -77,7 +85,7 @@ def disco_grade_20_28():
     desc3 = percent(posdesc2str + "*38%")
     posdesc3 = posdesc2 - desc3
     posdesc3str = str(posdesc3)
-    desc4 = percent(posdesc3str + "*" + valor_desconto + "%")
+    desc4 = percent(posdesc3str + "*" + valor_desconto_format + "%")
     posdesc4 = posdesc3 - desc4
     posdesc4str = str(posdesc4)
     desc5 = percent(posdesc4str + "*10.75%")
@@ -123,7 +131,7 @@ def disco_grade_20_28():
         print("")
 
         input("Pressione enter para voltar...")
-        disco_grade_20_28()
+    disco_grade_20_28()
 
 
 disco_grade_20_28()
