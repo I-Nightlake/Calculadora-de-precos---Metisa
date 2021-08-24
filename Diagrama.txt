@@ -1,0 +1,28 @@
+Diagrama Calculadora de Preços Metisa
+
+Legenda:
+
+####### - À FAZER
+@@@@@@@ - COMPLETO
+
+menu.py
+  0 - sair (exit)
+  1 - discos.py
+  2 - laminas.py
+  3 - dentes.py
+  
+  discos.py
+    0 - voltar (menu.py)
+    1 - discos_grade.py
+    2 - discos_plantadeiras.py
+    
+  laminas.py
+    0 - voltar (menu.py)
+    1 - motoniveladora.py
+    2 - perfil_nivelamento.py
+    
+  dentes.py   
+   
+    
+  
+  
