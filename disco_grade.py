@@ -1,21 +1,7 @@
 import os
 
-
-def percent(expression):
-    if "%" in expression:
-        expression = expression.replace("%", "/100")
-    return eval(expression)
-
-
-def comma_to_point(expression):
-    if "," in expression:
-        expression = expression.replace(",", ".")
-    return eval(expression)
-
-# Editar o valor em questão de tratamento de valores, caso erre, está pulando o código.
-
-
 os.system("cls")
+
 print("---Discos de Grade/Arado---")
 print("")
 print("Escolha uma opcao")
@@ -34,104 +20,27 @@ print('4 - 30" para cima')
 print("")
 opcao_disco_grade = input("->")
 
-if opcao_disco_grade not in {"00", "0", "1", "2", "3", "4"}:
-    os.system("cls")
-    input("Comando Invalido, pressione enter para voltar...")
-    exec(open("disco_grade.py").read())
-
 if opcao_disco_grade == "00":
     exec(open("menu.py").read())
 
 if opcao_disco_grade == "0":
     exec(open("discos.py").read())
 
+if opcao_disco_grade == "1":
+    exec(open("discos_grade_20_28.py").read())
 
-def disco_grade_20_28():
-    global opcao_disco_grade
-    if opcao_disco_grade == "1":
-        os.system("cls")
-        print("Desconto aplicado = -5% -15% -38% -???% -10,75% +5%")
-        print("")
+if opcao_disco_grade == "2":
+    exec(open("discos_grade_22.py").read())
 
-    while True:
-        try:
-            valor_desconto = input("Desconto ??? ->")
-            if ("a" <= valor_desconto <= "z") or ("A" <= valor_desconto <= "Z") or valor_desconto == "":
-                raise ValueError("O desconto precisa ser um numero...")
-        except ValueError as ve1:
-            print(ve1)
-        else:
-            break
+if opcao_disco_grade == "3":
+    exec(open("discos_grade_24_26.py").read())
 
-    valor_desconto_format = str(comma_to_point(valor_desconto))
+if opcao_disco_grade == "4":
+    exec(open("discos_grade_30").read())
+
+if opcao_disco_grade not in {"00", "0", "1", "2", "3", "4"}:
+    os.system("cls")
+    print("Comando invalido, tente novamente...")
     print("")
-
-    while True:
-        try:
-            valor1 = str(comma_to_point(input("Valor do item->")))
-            if ('a' <= valor1 <= 'z') or ('A' <= valor1 <= 'Z'):
-                raise ValueError("O valor do item precisam ser um número...")
-        except ValueError as ve2:
-            print(ve2)
-        else:
-            break
-
-    desc1 = percent(valor1 + "*5%")
-    posdesc1 = float(valor1) - desc1
-    posdesc1str = str(posdesc1)
-    desc2 = percent(posdesc1str + "*15%")
-    posdesc2 = posdesc1 - desc2
-    posdesc2str = str(posdesc2)
-    desc3 = percent(posdesc2str + "*38%")
-    posdesc3 = posdesc2 - desc3
-    posdesc3str = str(posdesc3)
-    desc4 = percent(posdesc3str + "*" + valor_desconto_format + "%")
-    posdesc4 = posdesc3 - desc4
-    posdesc4str = str(posdesc4)
-    desc5 = percent(posdesc4str + "*10.75%")
-    posdesc5 = posdesc4 - desc5
-    posdesc5str = str(posdesc5)
-    ipi = percent(posdesc5str + "*5%")
-    posipi = posdesc5 + ipi
-    posipistr = str(posipi)
-    print("")
-    print("A Vista? (3% de Desconto)")
-    print("")
-    print("1 - Sim")
-    print("")
-    print("2 - Nao")
-    print("")
-
-    while True:
-        try:
-            avista1 = input("->")
-            if avista1 == "1":
-                break
-            if avista1 == "2":
-                break
-            else:
-                raise ValueError("Opcao invalida")
-        except ValueError as ve3:
-            print(ve3)
-
-    if avista1 == "1":
-        print("")
-        print("Valor Unitario Final: R$ " + posipistr)
-        print("")
-
-        input("Pressione enter para voltar...")
-        disco_grade_20_28()
-
-    if avista1 == "2":
-        valor_avista = percent(posipistr + "*3%")
-        posvalor_avista = posipi + valor_avista
-        posvalor_avistastr = str(posvalor_avista)
-        print("")
-        print("Valor Unitario Final: R$ " + posvalor_avistastr)
-        print("")
-
-        input("Pressione enter para voltar...")
-    disco_grade_20_28()
-
-
-disco_grade_20_28()
+    input("Pressione enter para voltar")
+    exec(open("discos_grade.py").read())
