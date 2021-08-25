@@ -17,12 +17,12 @@ if opcao_lamina == "0":
     exec(open("menu.py").read())
 
 if opcao_lamina == "1":
-    exec(open("lamina_moto.py").read())
+    exec(open("laminas_moto.py").read())
 
 if opcao_lamina == "2":
-    exec(open("lamina_perfil.py").read())
+    exec(open("laminas_perfil.py").read())
 
-else:
+if opcao_lamina not in {"0", "1", "2"}:
     os.system("cls")
     print("Comando invalido, tente novamente...")
     print("")
