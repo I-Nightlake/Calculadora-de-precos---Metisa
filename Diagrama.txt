@@ -7,9 +7,12 @@ Legenda:
 
 menu.py @@@@@@@
   0 - sair (exit) @@@@@@@
+  
   1 - discos.py @@@@@@@
+  
     0 - voltar (menu.py) @@@@@@@
     1 - discos_grade.py #######
+    
       00 - menu principal (menu.py) #######
       0 - voltar (discos.py) #######
       1 - discos_grade_20_28 #######
