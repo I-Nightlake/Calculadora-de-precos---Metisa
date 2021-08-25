@@ -36,7 +36,7 @@ if opcao_disco_grade == "3":
     exec(open("discos_grade_24_26.py").read())
 
 if opcao_disco_grade == "4":
-    exec(open("discos_grade_30").read())
+    exec(open("discos_grade_30.py").read())
 
 if opcao_disco_grade not in {"00", "0", "1", "2", "3", "4"}:
     os.system("cls")
