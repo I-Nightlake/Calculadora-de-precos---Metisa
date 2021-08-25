@@ -1,6 +1,6 @@
 import os
 
-os.system("title " + "Calculadora de Precos - Metisa")
+os.system("title " + "Calculadora de Precos - Metisa - 1.0")
 os.system("cls")
 
 print("---Menu Principal---")
