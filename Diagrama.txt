@@ -8,8 +8,15 @@ Legenda:
 menu.py @@@@@@@
   0 - sair (exit) @@@@@@@
   1 - discos.py @@@@@@@
-    0 - voltar @@@@@@@
+    0 - voltar (menu.py) @@@@@@@
     1 - discos_grade.py #######
+      00 - menu principal (menu.py) #######
+      0 - voltar (discos.py) #######
+      1 - discos_grade_20_28 #######
+      2 - discos_grade_22 #######
+      3 - discos_grade_24_26 #######
+      4 - discos_grade_30 #######
+      
     2 - discos_plantadeira.py #######
     
   2 - laminas.py #######
