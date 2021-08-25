@@ -35,7 +35,17 @@ menu.py @@@@@@@
     
       00 - voltar (discos.py) @@@@@@@
     
-  2 - laminas.py #######
+  2 - laminas.py @@@@@@@
+  
+    0 - voltar (menu.py) @@@@@@@
+    1 - laminas_moto.py @@@@@@@
+    
+      00 - voltar (laminas.py) @@@@@@@
+      
+    2 - laminas_perfil.py #######
+    
+      00 - voltar (laminas.py) #######
+  
   3 - dentes.py #######
   
   discos.py #######
