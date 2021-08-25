@@ -7,7 +7,11 @@ Legenda:
 
 menu.py @@@@@@@
   0 - sair (exit) @@@@@@@
-  1 - discos.py #######
+  1 - discos.py @@@@@@@
+    0 - voltar @@@@@@@
+    1 - discos_grade.py #######
+    2 - discos_plantadeira.py #######
+    
   2 - laminas.py #######
   3 - dentes.py #######
   
