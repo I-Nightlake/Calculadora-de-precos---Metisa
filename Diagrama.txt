@@ -31,7 +31,9 @@ menu.py @@@@@@@
       
         00 - voltar (disco_grade.py) @@@@@@@
       
-    2 - discos_plantadeira.py #######
+    2 - discos_plantadeira.py @@@@@@@
+    
+      00 - voltar (discos.py) @@@@@@@
     
   2 - laminas.py #######
   3 - dentes.py #######
