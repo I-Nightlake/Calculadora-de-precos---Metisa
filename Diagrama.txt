@@ -1,4 +1,4 @@
-Diagrama Calculadora de Preços Metisa
+Diagrama Calculadora de Preços Metisa Versão 1.0
 
 Legenda:
 
@@ -46,9 +46,9 @@ menu.py @@@@@@@
     
       00 - voltar (laminas.py) @@@@@@@
   
-  3 - dentes.py #######
+  3 - dentes.py @@@@@@@
   
-   
+ Versão 1.0 Finalizada.
     
   
   
