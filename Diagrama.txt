@@ -42,23 +42,12 @@ menu.py @@@@@@@
     
       00 - voltar (laminas.py) @@@@@@@
       
-    2 - laminas_perfil.py #######
+    2 - laminas_perfil.py @@@@@@@
     
-      00 - voltar (laminas.py) #######
+      00 - voltar (laminas.py) @@@@@@@
   
   3 - dentes.py #######
   
-  discos.py #######
-    0 - voltar (menu.py) #######
-    1 - discos_grade.py #######
-    2 - discos_plantadeiras.py #######
-    
-  laminas.py #######
-    0 - voltar (menu.py) #######
-    1 - motoniveladora.py #######
-    2 - perfil_nivelamento.py #######
-    
-  dentes.py #######
    
     
   
