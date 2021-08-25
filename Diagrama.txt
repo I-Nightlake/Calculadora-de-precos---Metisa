@@ -13,8 +13,8 @@ menu.py @@@@@@@
     0 - voltar (menu.py) @@@@@@@
     1 - discos_grade.py #######
     
-      00 - menu principal (menu.py) #######
-      0 - voltar (discos.py) #######
+      00 - menu principal (menu.py) @@@@@@@
+      0 - voltar (discos.py) @@@@@@@
       1 - discos_grade_20_28 #######
       2 - discos_grade_22 #######
       3 - discos_grade_24_26 #######
