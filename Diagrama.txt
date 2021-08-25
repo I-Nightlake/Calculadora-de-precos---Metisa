@@ -5,8 +5,8 @@ Legenda:
 ####### - À FAZER
 @@@@@@@ - COMPLETO
 
-menu.py #######
-  0 - sair (exit)
+menu.py @@@@@@@
+  0 - sair (exit) @@@@@@@
   1 - discos.py #######
   2 - laminas.py #######
   3 - dentes.py #######
