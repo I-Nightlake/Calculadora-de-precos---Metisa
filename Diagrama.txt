@@ -23,7 +23,10 @@ menu.py @@@@@@@
       
         00 - voltar (discos_grade.py) @@@@@@@
         
-      3 - discos_grade_24_26.py #######
+      3 - discos_grade_24_26.py @@@@@@@
+      
+        00 - voltar (disco_grade.py) @@@@@@@
+        
       4 - discos_grade_30.py #######
       
     2 - discos_plantadeira.py #######
