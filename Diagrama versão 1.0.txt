@@ -49,6 +49,3 @@ menu.py @@@@@@@
   3 - dentes.py @@@@@@@
   
  Versão 1.0 Finalizada.
-    
-  
-  
