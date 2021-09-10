@@ -4,17 +4,19 @@ os.system("title " + "Calculadora de Precos - Metisa - 1.0")
 os.system("cls")
 
 print("---Menu Principal---")
-print("")
+print()
 print("Escolha uma opcao")
-print("")
+print()
 print("0 - Sair")
-print("")
+print()
 print("1 - Discos")
-print("")
+print()
 print("2 - Laminas")
-print("")
+print()
 print("3 - Dentes")
-print("")
+print()
+print("4 - Creditos")
+print()
 opcao = input("->")
 
 if opcao == "0":
@@ -29,9 +31,18 @@ if opcao == "2":
 if opcao == "3":
     exec(open("dentes.py").read())
 
-if opcao not in {"0", "1", "2", "3"}:
+if opcao == "4":
+    os.system("cls")
+    print("Calculadora de preços - Metisa")
+    print()
+    print("Criada e idealizada por Italo Miguel Souza")
+    print()
+    input("Pressione enter para voltar ao menu")
+    exec(open("menu.py").read())
+
+if opcao not in {"0", "1", "2", "3", "4"}:
     os.system("cls")
     print("Comando invalido, tente novamente...")
-    print("")
+    print()
     input("Pressione enter para voltar")
     exec(open("menu.py").read())
