@@ -16,11 +16,11 @@ def comma_to_point(expression):
 os.system("cls")
 
 print("---Dentes---")
-print("")
+print()
 print("Desconto aplicado = -5% -15% -47% -##% -5,70% +5%")
-print("")
+print()
 print("00 - Voltar")
-print("")
+print()
 
 while True:
     try:
@@ -28,9 +28,9 @@ while True:
         if ("a" <= desconto <= "z") or ("A" <= desconto <= "Z") or desconto == "":
             raise ValueError("Desconto invalido, tente novamente...")
     except ValueError as ve1:
-        print("")
+        print()
         print(ve1)
-        print("")
+        print()
     else:
         break
 
@@ -39,7 +39,7 @@ if desconto == "00":
 
 desconto_format = str(comma_to_point(desconto))
 
-print("")
+print()
 
 while True:
     try:
@@ -71,13 +71,13 @@ posdesc5str = str(posdesc5)
 ipi = percent(posdesc5str + "*5%")
 posipi = posdesc5 + ipi
 posipistr = str(posipi)
-print("")
+print()
 print("A Vista? (3% de Desconto)")
-print("")
+print()
 print("1 - Sim")
-print("")
+print()
 print("2 - Nao")
-print("")
+print()
 
 while True:
     try:
@@ -90,9 +90,9 @@ while True:
         print(ve3)
 
 if avista == "1":
-    print("")
+    print()
     print("Valor Unitario Final: R$ " + posipistr)
-    print("")
+    print()
     input("Pressione enter para voltar")
     exec(open("dentes.py").read())
 
@@ -100,8 +100,8 @@ if avista == "2":
     valor_avista = percent(posipistr + "*3%")
     posvalor_avista = posipi + valor_avista
     posvalor_avistastr = str(posvalor_avista)
-    print("")
+    print()
     print("Valor Unitario Final: R$ " + posvalor_avistastr)
-    print("")
+    print()
     input("Pressione enter para voltar")
     exec(open("dentes.py").read())
