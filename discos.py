@@ -3,15 +3,15 @@ import os
 os.system("cls")
 
 print("---Discos---")
-print("")
+print()
 print("Escolha uma opcao")
-print("")
+print()
 print("0 - Voltar")
-print("")
+print()
 print("1 - Grade/Arado")
-print("")
+print()
 print("2 - Plantadeira/Roda Guia")
-print("")
+print()
 opcao_disco = input("->")
 
 if opcao_disco == "0":
@@ -26,6 +26,6 @@ if opcao_disco == "2":
 if opcao_disco not in {"0", "1", "2"}:
     os.system("cls")
     print("Comando invalido, tente novamente...")
-    print("")
+    print()
     input("Pressione enter para voltar")
     exec(open("discos.py").read())
