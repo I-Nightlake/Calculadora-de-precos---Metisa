@@ -33,9 +33,10 @@ if opcao == "3":
 
 if opcao == "4":
     os.system("cls")
-    print("Calculadora de preços - Metisa")
+    print("Calculadora de precos - Metisa")
     print()
     print("Criada e idealizada por Italo Miguel Souza")
+    print()
     print()
     input("Pressione enter para voltar ao menu")
     exec(open("menu.py").read())
