@@ -48,4 +48,6 @@ menu.py @@@@@@@
   
   3 - dentes.py @@@@@@@
   
+  4 - creditos @@@@@@@
+  
  Versão 1.0 Finalizada.
