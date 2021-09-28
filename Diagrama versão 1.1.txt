@@ -16,18 +16,22 @@ menu.py @@@@@@@
       00 - menu principal (menu.py) @@@@@@@
       0 - voltar (discos.py) @@@@@@@
       1 - discos_grade_20_28.py @@@@@@@
+       [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". #######]
       
         00 - voltar (discos_grade.py) @@@@@@@
         
       2 - discos_grade_22.py @@@@@@@
+       [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". #######]
       
         00 - voltar (discos_grade.py) @@@@@@@
         
       3 - discos_grade_24_26.py @@@@@@@
+       [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". #######]
       
         00 - voltar (disco_grade.py) @@@@@@@
         
       4 - discos_grade_30.py @@@@@@@
+       [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". #######]
       
         00 - voltar (disco_grade.py) @@@@@@@
       
@@ -39,14 +43,17 @@ menu.py @@@@@@@
   
     0 - voltar (menu.py) @@@@@@@
     1 - laminas_moto.py @@@@@@@
+     [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". #######]
     
       00 - voltar (laminas.py) @@@@@@@
       
     2 - laminas_perfil.py @@@@@@@
+     [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". #######]
     
       00 - voltar (laminas.py) @@@@@@@
   
   3 - dentes.py @@@@@@@
+   [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". #######]
   
   4 - creditos @@@@@@@
   
