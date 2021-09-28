@@ -16,7 +16,7 @@ menu.py @@@@@@@
       00 - menu principal (menu.py) @@@@@@@
       0 - voltar (discos.py) @@@@@@@
       1 - discos_grade_20_28.py @@@@@@@
-       [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". #######]
+       [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". @@@@@@@]
       
         00 - voltar (discos_grade.py) @@@@@@@
         
