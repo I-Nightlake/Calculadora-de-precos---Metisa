@@ -44,6 +44,8 @@ while True:
         valor = input("Valor do item->")
         if ("a" <= valor <= "z") or ("A" <= valor <= "Z") or valor == "":
             raise ValueError("Valor invalido, tente novamente...")
+        if valor == "00":
+            exec(open("discos_grade_20_28.py").read())
     except ValueError as ve2:
         print(ve2)
     else:
@@ -80,6 +82,8 @@ print()
 while True:
     try:
         avista = input("->")
+        if avista == "00":
+            exec(open("discos_grade_20_28.py").read())
         if avista == "1" or avista == "2":
             break
         else:
