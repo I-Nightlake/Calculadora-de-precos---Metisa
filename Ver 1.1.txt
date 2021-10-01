@@ -26,12 +26,12 @@ menu.py @@@@@@@
         00 - voltar (discos_grade.py) @@@@@@@
         
       3 - discos_grade_24_26.py @@@@@@@
-       [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". #######]
+       [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". @@@@@@@]
       
         00 - voltar (disco_grade.py) @@@@@@@
         
       4 - discos_grade_30.py @@@@@@@
-       [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". #######]
+       [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". @@@@@@@]
       
         00 - voltar (disco_grade.py) @@@@@@@
       
