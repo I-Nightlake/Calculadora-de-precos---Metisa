@@ -36,6 +36,7 @@ menu.py @@@@@@@
         00 - voltar (disco_grade.py) @@@@@@@
       
     2 - discos_plantadeira.py @@@@@@@
+     [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". #######]
     
       00 - voltar (discos.py) @@@@@@@
     
