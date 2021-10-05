@@ -15,6 +15,8 @@ def comma_to_point(expression):
 
 os.system("cls")
 
+print("---Discos Grade 20 e 28 Pol---")
+print()
 print("Desconto aplicado = -5% -15% -38% -##% -10,75% +5%")
 print()
 print("00 - Voltar")
