@@ -15,6 +15,8 @@ def comma_to_point(expression):
 
 os.system("cls")
 
+print("---Laminas Perfil---")
+print()
 print("Desconto aplicado = -5% -15% -13,50% -##% -10,75% +5%")
 print()
 print("00 - Voltar")
@@ -44,6 +46,8 @@ while True:
         valor = input("Valor do item->")
         if ("a" <= valor <= "z") or ("A" <= valor <= "Z") or valor == "":
             raise ValueError("Valor invalido, tente novamente...")
+        if valor == "00":
+            exec(open("laminas_perfil.py").read())
     except ValueError as ve2:
         print(ve2)
     else:
@@ -80,6 +84,8 @@ print()
 while True:
     try:
         avista = input("->")
+        if avista == "00":
+            exec(open("laminas_perfil.py").read())
         if avista == "1" or avista == "2":
             break
         else:
