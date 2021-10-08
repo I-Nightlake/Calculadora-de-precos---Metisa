@@ -1,61 +1,46 @@
-Diagrama Calculadora de Preços Metisa Versão 1.0
+Diagrama Calculadora de Preços Metisa Versão 1.1
 
-Legenda:
-
-####### - À FAZER
-@@@@@@@ - COMPLETO
-
-menu.py @@@@@@@
-  0 - sair (exit) @@@@@@@
+menu.py 
+  0 - sair (exit) 
   
-  1 - discos.py @@@@@@@
+  1 - discos.py 
   
-    0 - voltar (menu.py) @@@@@@@
-    1 - discos_grade.py @@@@@@@
+    0 - voltar (menu.py) 
+    1 - discos_grade.py 
     
-      00 - menu principal (menu.py) @@@@@@@
-      0 - voltar (discos.py) @@@@@@@
-      1 - discos_grade_20_28.py @@@@@@@
-       [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". @@@@@@@]
+      00 - menu principal (menu.py) 
+      0 - voltar (discos.py) 
+      1 - discos_grade_20_28.py 
       
-        00 - voltar (discos_grade.py) @@@@@@@
+        00 - voltar (discos_grade.py)
         
-      2 - discos_grade_22.py @@@@@@@
-       [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". @@@@@@@]
+      2 - discos_grade_22.py 
       
-        00 - voltar (discos_grade.py) @@@@@@@
+        00 - voltar (discos_grade.py) 
         
-      3 - discos_grade_24_26.py @@@@@@@
-       [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". @@@@@@@]
+      3 - discos_grade_24_26.py
       
-        00 - voltar (disco_grade.py) @@@@@@@
+        00 - voltar (disco_grade.py)
         
-      4 - discos_grade_30.py @@@@@@@
-       [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". @@@@@@@]
+      4 - discos_grade_30.py
       
-        00 - voltar (disco_grade.py) @@@@@@@
+        00 - voltar (disco_grade.py)
       
-    2 - discos_plantadeira.py @@@@@@@
-     [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". @@@@@@@]
+    2 - discos_plantadeira.py 
     
-      00 - voltar (discos.py) @@@@@@@
+      00 - voltar (discos.py)
     
-  2 - laminas.py @@@@@@@
+  2 - laminas.py
   
-    0 - voltar (menu.py) @@@@@@@
-    1 - laminas_moto.py @@@@@@@
-     [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". @@@@@@@]
+    0 - voltar (menu.py)
+    1 - laminas_moto.py
     
-      00 - voltar (laminas.py) @@@@@@@
+      00 - voltar (laminas.py)
       
-    2 - laminas_perfil.py @@@@@@@
-     [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". @@@@@@@]
+    2 - laminas_perfil.py
     
-      00 - voltar (laminas.py) @@@@@@@
+      00 - voltar (laminas.py)
   
-  3 - dentes.py @@@@@@@
-   [1.1 -> Adicionada a possibilidade de voltar em meio ao cálculo com "00". @@@@@@@]
+  3 - dentes.py
   
-  4 - creditos @@@@@@@
-  
- Versão 1.1 Finalizada.
+  4 - creditos
