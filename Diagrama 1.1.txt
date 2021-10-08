@@ -4,35 +4,35 @@ menu.py
 
 0 - sair (exit) 
   
-1 - discos.py 
-  
-   0 - voltar (menu.py) 
-    
-   1 - discos_grade.py 
-    
-      00 - menu principal (menu.py) 
-      
-      0 - voltar (discos.py) 
-      
-      1 - discos_grade_20_28.py 
-      
-         00 - voltar (discos_grade.py)
-        
-      2 - discos_grade_22.py 
-      
-         00 - voltar (discos_grade.py) 
-        
-      3 - discos_grade_24_26.py
-      
-         00 - voltar (disco_grade.py)
-        
-      4 - discos_grade_30.py
-      
-         00 - voltar (disco_grade.py)
-      
-   2 - discos_plantadeira.py 
-    
-      00 - voltar (discos.py)
+I-1 - discos.py 
+I  
+I-----0 - voltar (menu.py) 
+I    
+I-----1 - discos_grade.py 
+I     I
+I     I-----00 - menu principal (menu.py) 
+I      
+I      0 - voltar (discos.py) 
+I      
+I      1 - discos_grade_20_28.py 
+I      
+I         00 - voltar (discos_grade.py)
+I        
+I      2 - discos_grade_22.py 
+I      
+I         00 - voltar (discos_grade.py) 
+I        
+I      3 - discos_grade_24_26.py
+I      
+I         00 - voltar (disco_grade.py)
+I        
+I      4 - discos_grade_30.py
+I      
+I         00 - voltar (disco_grade.py)
+I      
+I-----2 - discos_plantadeira.py 
+      I
+      I---00 - voltar (discos.py)
     
 2 - laminas.py
   
