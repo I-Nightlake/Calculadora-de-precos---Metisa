@@ -9,7 +9,7 @@ Ver 1.1:
 - Adicionada a possibilidade de voltar no momento de solicitação da informação da forma de pagamento do item.
 
 
-Ver 1.2:
+Ver 1.2: ###### Trabalhando
 
 - Adicionada a categoria de Importados. - ###### Trabalhando
 - Correção do erro "SyntaxError: leading zeros in decimal interger literals are not permitted; use an 0o prefix for octal intergers". - ###### Trabalhando
