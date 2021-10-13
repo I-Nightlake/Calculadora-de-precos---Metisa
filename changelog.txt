@@ -11,7 +11,7 @@ Ver 1.1:
 
 Ver 1.2: ###### Trabalhando
 
-- Adicionada a categoria de Importados. - ###### Trabalhando
+- Adicionada a categoria de Importados.
 - Correção do erro "SyntaxError: leading zeros in decimal interger literals are not permitted; use an 0o prefix for octal intergers". - ###### Trabalhando
 
 
