@@ -1,6 +1,6 @@
 import os
 
-os.system("title " + "Calculadora de Precos - Metisa - 1.1")
+os.system("title " + "Calculadora de Precos - Metisa - 1.2")
 os.system("cls")
 
 print("---Menu Principal---")
@@ -15,7 +15,9 @@ print("2 - Laminas")
 print()
 print("3 - Dentes")
 print()
-print("4 - Creditos")
+print("4 - Importados")
+print()
+print("5 - Creditos")
 print()
 opcao = input("->")
 
@@ -32,6 +34,9 @@ if opcao == "3":
     exec(open("dentes.py").read())
 
 if opcao == "4":
+    exec(open("importados.py").read())
+
+if opcao == "5":
     os.system("cls")
     print("Calculadora de precos - Metisa")
     print()
@@ -41,7 +46,7 @@ if opcao == "4":
     input("Pressione enter para voltar ao menu")
     exec(open("menu.py").read())
 
-if opcao not in {"0", "1", "2", "3", "4"}:
+if opcao not in {"0", "1", "2", "3", "4", "5"}:
     os.system("cls")
     print("Comando invalido, tente novamente...")
     print()
