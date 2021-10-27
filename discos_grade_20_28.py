@@ -27,6 +27,8 @@ while True:
         desconto = input("Desconto ## ->")
         if ("a" <= desconto <= "z") or ("A" <= desconto <= "Z") or desconto == "":
             raise ValueError("Desconto invalido, tente novamente...")
+        if "00000001" <= desconto <= "09999999":
+            raise ValueError("Numeros nao podem comecar com 0, sendo este um numero inteiro")
     except ValueError as ve1:
         print()
         print(ve1)
@@ -46,6 +48,8 @@ while True:
         valor = input("Valor do item->")
         if ("a" <= valor <= "z") or ("A" <= valor <= "Z") or valor == "":
             raise ValueError("Valor invalido, tente novamente...")
+        if "00000001" <= valor <= "09999999":
+            raise ValueError("Numeros nao podem comecar com 0, sendo este um numero inteiro")
         if valor == "00":
             exec(open("discos_grade_20_28.py").read())
     except ValueError as ve2:
