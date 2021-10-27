@@ -28,7 +28,7 @@ while True:
         if ("a" <= valor <= "z") or ("A" <= valor <= "Z") or valor == "":
             raise ValueError("Valor invalido, tente novamente...")
         if "00000001" <= valor <= "09999999":
-            raise ValueError("Expressoes nao podem comecar com 0, sendo este um numero inteiro")
+            raise ValueError("Numeros nao podem comecar com 0, sendo este um numero inteiro")
         if valor == "00":
             exec(open("menu.py").read())
     except ValueError as ve1:
