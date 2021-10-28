@@ -1,0 +1,1 @@
+Limitar as casas decimais de um float number - https://blog.finxter.com/limit-floats-to-two-decimal-points-python/.
