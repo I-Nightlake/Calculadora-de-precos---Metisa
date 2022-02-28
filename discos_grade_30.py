@@ -17,7 +17,7 @@ os.system("cls")
 
 print("---Discos Grade 30 Pol---")
 print()
-print("Desconto aplicado = -5% -15% -44% -##% -10,75% +5%")
+print("Desconto aplicado = -5% -15% -44% -##% -10,75% +3,75%")
 print()
 print("00 - Voltar")
 print()
@@ -74,7 +74,7 @@ posdesc4str = str(posdesc4)
 desc5 = percent(posdesc4str + "*10.75%")
 posdesc5 = posdesc4 - desc5
 posdesc5str = str(posdesc5)
-ipi = percent(posdesc5str + "*5%")
+ipi = percent(posdesc5str + "*3.75%")
 posipi = posdesc5 + ipi
 posipistr = str(posipi)
 print()
