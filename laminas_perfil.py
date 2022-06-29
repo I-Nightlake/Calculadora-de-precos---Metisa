@@ -17,7 +17,7 @@ os.system("cls")
 
 print("---Laminas Perfil---")
 print()
-print("Desconto aplicado = -5% -15% -13,50% -##% -10,75% +3,75%")
+print("Desconto aplicado = -5% -15% -13,50% -##% -10,75% +3,25%")
 print()
 print("00 - Voltar")
 print()
@@ -28,7 +28,7 @@ while True:
         if ("a" <= desconto <= "z") or ("A" <= desconto <= "Z") or desconto == "":
             raise ValueError("Desconto invalido, tente novamente...")
         if "00000001" <= desconto <= "09999999":
-            raise ValueError("Numeros nao podem comecar com 0, sendo este um numero inteiro")
+            raise ValueError("Numeros nao podem cometary com 0, sendo este um numero inteiro")
     except ValueError as ve1:
         print()
         print(ve1)
@@ -74,7 +74,7 @@ posdesc4str = str(posdesc4)
 desc5 = percent(posdesc4str + "*10.75%")
 posdesc5 = posdesc4 - desc5
 posdesc5str = str(posdesc5)
-ipi = percent(posdesc5str + "*3.75%")
+ipi = percent(posdesc5str + "*3.25%")
 posipi = posdesc5 + ipi
 posipistr = str(posipi)
 print()
