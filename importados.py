@@ -17,7 +17,7 @@ os.system("cls")
 
 print("---Importados---")
 print()
-print("Desconto aplicado = -28% -5,70% +3,75%")
+print("Desconto aplicado = -28% -5,70% +3,25%")
 print()
 print("00 - Voltar")
 print()
@@ -53,7 +53,7 @@ posdesc4str = str(posdesc4)
 desc5 = percent(posdesc4str + "*5.70%")
 posdesc5 = posdesc4 - desc5
 posdesc5str = str(posdesc5)
-ipi = percent(posdesc5str + "*3.75%")
+ipi = percent(posdesc5str + "*3.25%")
 posipi = posdesc5 + ipi
 posipistr = str(posipi)
 print()
