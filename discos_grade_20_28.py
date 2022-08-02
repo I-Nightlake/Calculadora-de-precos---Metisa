@@ -19,6 +19,8 @@ print("---Discos Grade 20 e 28 Pol---")
 print()
 print("Desconto aplicado = -5% -15% -38% -##% -10,75% +3,25%")
 print()
+print("4° Desconto sugerido: 30%")
+print()
 print("00 - Voltar")
 print()
 
