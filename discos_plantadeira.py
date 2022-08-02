@@ -19,6 +19,8 @@ print("---Discos Plantadeira---")
 print()
 print("Desconto aplicado = -7% -20% -20% -##% -10,75% +3,25%")
 print()
+print("4° Desconto sugerido: 30%")
+print()
 print("00 - Voltar")
 print()
 
