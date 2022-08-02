@@ -16,7 +16,7 @@ Ver 1.2:
 
 Ver 1.2.1:
 
-- Atualização da alíquito de IPI para 3,25%.
+- Atualização da alíquota de IPI para 3,75% e posteriormente atualizada para 3,25%.
 
 Ver 1.2.2:
 
