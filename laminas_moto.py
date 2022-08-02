@@ -19,6 +19,8 @@ print("---Laminas Moto---")
 print()
 print("Desconto aplicado = -23% -15% -13,50% -##% -5,70% +3,25%")
 print()
+print("4° Desconto sugerido: 43,10%")
+print()
 print("00 - Voltar")
 print()
 
