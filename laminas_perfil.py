@@ -19,6 +19,8 @@ print("---Laminas Perfil---")
 print()
 print("Desconto aplicado = -5% -15% -13,50% -##% -10,75% +3,25%")
 print()
+print("4° Desconto sugerido: 30%")
+print()
 print("00 - Voltar")
 print()
 
@@ -113,3 +115,4 @@ if avista == "2":
     print()
     input("Pressione enter para voltar")
     exec(open("laminas_perfil.py").read())
+    
