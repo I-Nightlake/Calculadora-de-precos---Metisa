@@ -17,3 +17,7 @@ Ver 1.2:
 Ver 1.2.1:
 
 - Atualização da alíquito de IPI para 3,25%.
+
+Ver 1.2.2:
+
+- Inserido a linha de desconto sugerido.
