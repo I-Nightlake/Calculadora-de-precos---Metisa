@@ -1,4 +1,4 @@
-Diagrama Calculadora de Preços Metisa Versão 1.2.1
+Diagrama Calculadora de Preços Metisa Versão 1.2.2
 
 menu.py 
 I
