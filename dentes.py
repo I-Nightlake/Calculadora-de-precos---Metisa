@@ -19,6 +19,8 @@ print("---Dentes---")
 print()
 print("Desconto aplicado = -5% -15% -47% -##% -5,70% +3,25%")
 print()
+print("4° Desconto sugerido: 0%")
+print()
 print("00 - Voltar")
 print()
 
