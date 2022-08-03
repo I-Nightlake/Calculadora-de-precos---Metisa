@@ -17,7 +17,9 @@ print("3 - Dentes")
 print()
 print("4 - Importados")
 print()
-print("5 - Creditos")
+print("5 - Implementos Agricolas")
+print()
+print("6 - Creditos")
 print()
 opcao = input("->")
 
@@ -37,6 +39,9 @@ if opcao == "4":
     exec(open("importados.py").read())
 
 if opcao == "5":
+    exec(open("implementos_agricolas.py").read())
+
+if opcao == "6":
     os.system("cls")
     print("Calculadora de precos - Metisa- 1.2.2")
     print()
@@ -46,7 +51,7 @@ if opcao == "5":
     input("Pressione enter para voltar ao menu")
     exec(open("menu.py").read())
 
-if opcao not in {"0", "1", "2", "3", "4", "5"}:
+if opcao not in {"0", "1", "2", "3", "4", "5", "6"}:
     os.system("cls")
     print("Comando invalido, tente novamente...")
     print()
