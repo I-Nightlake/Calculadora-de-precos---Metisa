@@ -1,4 +1,4 @@
-Diagrama Calculadora de Preços Metisa Versão 1.2.2
+Diagrama Calculadora de Preços Metisa Versão 1.3
 
 menu.py 
 I
@@ -50,4 +50,6 @@ I---3 - dentes.py
 I  
 I---4 - importados.py
 I
-I---5 - creditos.py
+I---5 - implementos_agricolas.py
+I
+I---6 - creditos.py
