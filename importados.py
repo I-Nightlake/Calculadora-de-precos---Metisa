@@ -55,7 +55,8 @@ posdesc5 = posdesc4 - desc5
 posdesc5str = str(posdesc5)
 ipi = percent(posdesc5str + "*3.25%")
 posipi = posdesc5 + ipi
-posipistr = str(posipi)
+posipiround = round(posipi, ndigits=2)
+posipiroundstr = str(posipiround)
 print()
 print("A Vista? (3% de Desconto)")
 print()
@@ -78,17 +79,18 @@ while True:
 
 if avista == "1":
     print()
-    print("Valor Unitario Final: R$ " + posipistr)
+    print("Valor Unitario Final: R$ " + posipiroundstr)
     print()
     input("Pressione enter para voltar")
     exec(open("importados.py").read())
 
 if avista == "2":
-    valor_avista = percent(posipistr + "*3%")
+    valor_avista = percent(posipiroundstr + "*3%")
     posvalor_avista = posipi + valor_avista
-    posvalor_avistastr = str(posvalor_avista)
+    posvalor_avistaround = round(posvalor_avista, ndigits=2)
+    posvalor_avistaroundstr = str(posvalor_avistaround)
     print()
-    print("Valor Unitario Final: R$ " + posvalor_avistastr)
+    print("Valor Unitario Final: R$ " + posvalor_avistaroundstr)
     print()
     input("Pressione enter para voltar")
     exec(open("importados.py").read())
