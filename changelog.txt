@@ -21,3 +21,8 @@ Ver 1.2.1:
 Ver 1.2.2:
 
 - Inserido a linha de desconto sugerido.
+
+Ver 1.3:
+
+- Adicionada a categoria de Implementos Agricolas.
+- A quantidade de casas decimais foram limitadas em 2, sendo estas referentes aos centavos.
