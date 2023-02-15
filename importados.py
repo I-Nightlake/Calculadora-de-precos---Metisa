@@ -79,7 +79,7 @@ while True:
 
 if avista == "1":
     print()
-    print("Valor Unitario Final: R$ " + posipiroundstr)
+    print("Valor Unitario: R$ " + posipiroundstr)
     print()
     input("Pressione enter para voltar")
     exec(open("importados.py").read())
@@ -90,7 +90,7 @@ if avista == "2":
     posvalor_avistaround = round(posvalor_avista, ndigits=2)
     posvalor_avistaroundstr = str(posvalor_avistaround)
     print()
-    print("Valor Unitario Final: R$ " + posvalor_avistaroundstr)
+    print("Valor Unitario: R$ " + posvalor_avistaroundstr)
     print()
     input("Pressione enter para voltar")
     exec(open("importados.py").read())
