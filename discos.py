@@ -18,14 +18,14 @@ if opcao_disco == "0":
     exec(open("menu.py").read())
 
 if opcao_disco == "1":
-    exec(open("discos_grade.py").read())
+    exec(open("discos/discos_grade.py").read())
 
 if opcao_disco == "2":
-    exec(open("discos_plantadeira.py").read())
+    exec(open("discos/discos_plantadeira.py").read())
 
 if opcao_disco not in {"0", "1", "2"}:
     os.system("cls")
     print("Comando invalido, tente novamente...")
     print()
     input("Pressione enter para voltar")
-    exec(open("discos.py").read())
+    exec(open("discos/discos.py").read())
