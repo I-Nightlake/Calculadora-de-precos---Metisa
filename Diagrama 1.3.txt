@@ -1,55 +1,34 @@
 Diagrama Calculadora de Preços Metisa Versão 1.3
 
 menu.py 
-I
-I---0 - sair (exit) 
-I 
-I---1 - discos.py 
-I   I
-I   I---0 - voltar (menu.py) 
-I   I 
-I   I---1 - discos_grade.py 
-I   I   I
-I   I   I---00 - menu principal (menu.py) 
-I   I   I
-I   I   I---0 - voltar (discos.py) 
-I   I   I
-I   I   I---1 - discos_grade_20_28.py 
-I   I   I   I
-I   I   I   I---00 - voltar (discos_grade.py)
-I   I   I  
-I   I   I---2 - discos_grade_22.py 
-I   I   I   I
-I   I   I   I---00 - voltar (discos_grade.py) 
-I   I   I   
-I   I   I---3 - discos_grade_24_26.py
-I   I   I   I
-I   I   I   I---00 - voltar (disco_grade.py)
-I   I   I  
-I   I   I---4 - discos_grade_30.py
-I   I       I
-I   I       I---00 - voltar (disco_grade.py)
-I   I    
-I   I---2 - discos_plantadeira.py 
-I       I
-I       I---00 - voltar (discos.py)
-I    
-I---2 - laminas.py
-I   I
-I   I---0 - voltar (menu.py)
-I   I 
-I   I---1 - laminas_moto.py
-I   I   I
-I   I   I---00 - voltar (laminas.py)
-I   I   
-I   I---2 - laminas_perfil.py
-I       I
-I       I---00 - voltar (laminas.py)
-I  
-I---3 - dentes.py
-I  
-I---4 - importados.py
-I
-I---5 - implementos_agricolas.py
-I
-I---6 - creditos.py
+0 - sair (exit) 
+1 - discos.py 
+--1.0 - voltar (menu.py) 
+--1.1 - discos_grade.py 
+----1.1.00 - menu principal (menu.py) 
+----1.1.0 - voltar (discos.py)   
+----1.1.1 - discos_grade_20_28.py    
+------1.1.1.00 - voltar (discos_grade.py)     
+----1.1.2 - discos_grade_22.py    
+------1.1.2.00 - voltar (discos_grade.py)      
+----1.1.3 - discos_grade_24_26.py  
+------1.1.3.00 - voltar (disco_grade.py)    
+----1.1.4 - discos_grade_30.py  
+------1.1.4.00 - voltar (disco_grade.py)   
+----1.2 - discos_plantadeira.py  
+------1.2.00 - voltar (discos.py)
+--2 - laminas.py
+----2.0 - voltar (menu.py)
+----2.1 - laminas_moto.py
+------2.1.00 - voltar (laminas.py)
+----2.2 - laminas_moto_ar1.py
+------2.2.00 - voltar (laminas.py)
+----2.3 - laminas_perfil.py
+------2.3.00 - voltar (laminas.py)
+--3 - dentes.py
+----3.00 - voltar (menu.py)
+--4 - importados.py
+----4.00 - voltar (menu.py)
+--5 - implementos_agricolas.py
+----5.00 - voltar (menu.py)
+--6 - creditos.py
