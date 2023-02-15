@@ -27,19 +27,20 @@ if opcao == "0":
     exit()
 
 if opcao == "1":
-    exec(open("discos.py").read())
+    exec(open("discos/discos.py").read())
 
 if opcao == "2":
-    exec(open("laminas.py").read())
+
+    exec(open("laminas/laminas.py").read())
 
 if opcao == "3":
-    exec(open("dentes.py").read())
+    exec(open("dentes/dentes.py").read())
 
 if opcao == "4":
-    exec(open("importados.py").read())
+    exec(open("importados/importados.py").read())
 
 if opcao == "5":
-    exec(open("implementos_agricolas.py").read())
+    exec(open("implementos-agricolas/implementos_agricolas.py").read())
 
 if opcao == "6":
     os.system("cls")
