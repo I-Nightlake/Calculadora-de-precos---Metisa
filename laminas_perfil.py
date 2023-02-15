@@ -39,7 +39,7 @@ while True:
         break
 
 if desconto == "00":
-    exec(open("laminas.py").read())
+    exec(open("laminas/laminas.py").read())
 
 desconto_format = str(comma_to_point(desconto))
 
@@ -53,7 +53,7 @@ while True:
         if "00000001" <= valor <= "09999999":
             raise ValueError("Numeros nao podem comecar com 0, sendo este um numero inteiro")
         if valor == "00":
-            exec(open("laminas_perfil.py").read())
+            exec(open("laminas/laminas_perfil.py").read())
     except ValueError as ve2:
         print(ve2)
     else:
@@ -92,7 +92,7 @@ while True:
     try:
         avista = input("->")
         if avista == "00":
-            exec(open("laminas_perfil.py").read())
+            exec(open("laminas/laminas_perfil.py").read())
         if avista == "1" or avista == "2":
             break
         else:
@@ -105,7 +105,7 @@ if avista == "1":
     print("Valor Unitario: R$ " + posipiroundstr)
     print()
     input("Pressione enter para voltar")
-    exec(open("laminas_perfil.py").read())
+    exec(open("laminas/laminas_perfil.py").read())
 
 if avista == "2":
     valor_avista = percent(posipiroundstr + "*3%")
@@ -116,4 +116,4 @@ if avista == "2":
     print("Valor Unitario: R$ " + posvalor_avistaroundstr)
     print()
     input("Pressione enter para voltar")
-    exec(open("laminas_perfil.py").read())
+    exec(open("laminas/laminas_perfil.py").read())
