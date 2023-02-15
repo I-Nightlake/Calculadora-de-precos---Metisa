@@ -69,7 +69,7 @@ while True:
     try:
         avista = input("->")
         if avista == "00":
-            exec(open("importados.py").read())
+            exec(open("importados/importados.py").read())
         if avista == "1" or avista == "2":
             break
         else:
@@ -82,7 +82,7 @@ if avista == "1":
     print("Valor Unitario: R$ " + posipiroundstr)
     print()
     input("Pressione enter para voltar")
-    exec(open("importados.py").read())
+    exec(open("importados/importados.py").read())
 
 if avista == "2":
     valor_avista = percent(posipiroundstr + "*3%")
@@ -93,4 +93,4 @@ if avista == "2":
     print("Valor Unitario: R$ " + posvalor_avistaroundstr)
     print()
     input("Pressione enter para voltar")
-    exec(open("importados.py").read())
+    exec(open("importados/importados.py").read())
