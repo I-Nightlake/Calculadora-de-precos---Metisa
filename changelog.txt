@@ -26,3 +26,11 @@ Ver 1.3:
 
 - Adicionada a categoria de Implementos Agricolas.
 - A quantidade de casas decimais foram limitadas em 2, sendo estas referentes aos centavos.
+
+Ver 1.3.1:
+
+- Removida a palavra "Final" do final da frase "Valor Unitário (Final)".
+- Adicionada a categoria de Lâminas Moto AR-1.
+- Atualização da grafia do diagrama para melhor interpretação.
+- Organizados os arquivos em pastas.
+- Atualizados os descontos sugeridos de todos os itens.

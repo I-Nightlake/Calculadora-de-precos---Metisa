@@ -1,4 +1,5 @@
 import os
+import subprocess
 
 
 def percent(expression):
@@ -13,13 +14,18 @@ def comma_to_point(expression):
     return eval(expression)
 
 
+def ctrlc(txt):
+    cmd = 'echo ' + txt.strip() + '|clip'
+    return subprocess.check_call(cmd, shell=True)
+
+
 os.system("cls")
 
-print("---Discos Grade 24 e 26 Pol---")
+print("---Discos Grade 30 Pol---")
 print()
-print("Desconto aplicado = -5% -15% -42,2% -##% -10,75% +3,25%")
+print("Desconto aplicado = -5% -15% -44% -##% -10,75% +3,25%")
 print()
-print("Desconto sugerido: 30%")
+print("Desconto sugerido: 38%")
 print()
 print("00 - Voltar")
 print()
@@ -53,7 +59,7 @@ while True:
         if "00000001" <= valor <= "09999999":
             raise ValueError("Numeros nao podem comecar com 0, sendo este um numero inteiro")
         if valor == "00":
-            exec(open("discos/discos_grade_24_26.py").read())
+            exec(open("discos/discos_grade_30.py").read())
     except ValueError as ve2:
         print(ve2)
     else:
@@ -67,7 +73,7 @@ posdesc1str = str(posdesc1)
 desc2 = percent(posdesc1str + "*15%")
 posdesc2 = posdesc1 - desc2
 posdesc2str = str(posdesc2)
-desc3 = percent(posdesc2str + "*42.2%")
+desc3 = percent(posdesc2str + "*44%")
 posdesc3 = posdesc2 - desc3
 posdesc3str = str(posdesc3)
 desc4 = percent(posdesc3str + "*" + desconto_format + "%")
@@ -92,7 +98,7 @@ while True:
     try:
         avista = input("->")
         if avista == "00":
-            exec(open("discos/discos_grade_24_26.py").read())
+            exec(open("discos/discos_grade_30.py").read())
         if avista == "1" or avista == "2":
             break
         else:
@@ -103,9 +109,10 @@ while True:
 if avista == "1":
     print()
     print("Valor Unitario: R$ " + posipiroundstr)
+    ctrlc("Valor Unitário: R$ " + posipiroundstr)
     print()
     input("Pressione enter para voltar")
-    exec(open("discos/discos_grade_24_26.py").read())
+    exec(open("discos/discos_grade_30.py").read())
 
 if avista == "2":
     valor_avista = percent(posipiroundstr + "*3%")
@@ -114,6 +121,7 @@ if avista == "2":
     posvalor_avistaroundstr = str(posvalor_avistaround)
     print()
     print("Valor Unitario: R$ " + posvalor_avistaroundstr)
+    ctrlc("Valor Unitário: R$ " + posvalor_avistaroundstr)
     print()
     input("Pressione enter para voltar")
-    exec(open("discos/discos_grade_24_26.py").read())
+    exec(open("discos/discos_grade_30.py").read())

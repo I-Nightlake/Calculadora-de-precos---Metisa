@@ -15,11 +15,11 @@ def comma_to_point(expression):
 
 os.system("cls")
 
-print("---Discos Plantadeira---")
+print("---Implementos Agricolas---")
 print()
-print("Desconto aplicado = -7% -20% -20% -##% -10,75% +3,25%")
+print("Desconto aplicado = -5% -20% -24% -##% -10,75% +3,25%")
 print()
-print("Desconto sugerido: 30%")
+print("Desconto sugerido: 35%")
 print()
 print("00 - Voltar")
 print()
@@ -39,7 +39,7 @@ while True:
         break
 
 if desconto == "00":
-    exec(open("discos/discos.py").read())
+    exec(open("menu.py").read())
 
 desconto_format = str(comma_to_point(desconto))
 
@@ -53,7 +53,7 @@ while True:
         if "00000001" <= valor <= "09999999":
             raise ValueError("Numeros nao podem comecar com 0, sendo este um numero inteiro")
         if valor == "00":
-            exec(open("discos/discos_plantadeira.py").read())
+            exec(open("implementos-agricolas/implementos_agricolas.py").read())
     except ValueError as ve2:
         print(ve2)
     else:
@@ -61,13 +61,13 @@ while True:
 
 valor_format = str(comma_to_point(valor))
 
-desc1 = percent(valor_format + "*7%")
+desc1 = percent(valor_format + "*5%")
 posdesc1 = float(valor_format) - desc1
 posdesc1str = str(posdesc1)
 desc2 = percent(posdesc1str + "*20%")
 posdesc2 = posdesc1 - desc2
 posdesc2str = str(posdesc2)
-desc3 = percent(posdesc2str + "*20%")
+desc3 = percent(posdesc2str + "*24%")
 posdesc3 = posdesc2 - desc3
 posdesc3str = str(posdesc3)
 desc4 = percent(posdesc3str + "*" + desconto_format + "%")
@@ -92,7 +92,7 @@ while True:
     try:
         avista = input("->")
         if avista == "00":
-            exec(open("discos/discos_plantadeira.py").read())
+            exec(open("implementos-agricolas/implementos_agricolas.py").read())
         if avista == "1" or avista == "2":
             break
         else:
@@ -105,7 +105,7 @@ if avista == "1":
     print("Valor Unitario: R$ " + posipiroundstr)
     print()
     input("Pressione enter para voltar")
-    exec(open("discos/discos_plantadeira.py").read())
+    exec(open("implementos-agricolas/implementos_agricolas.py").read())
 
 if avista == "2":
     valor_avista = percent(posipiroundstr + "*3%")
@@ -116,4 +116,4 @@ if avista == "2":
     print("Valor Unitario: R$ " + posvalor_avistaroundstr)
     print()
     input("Pressione enter para voltar")
-    exec(open("discos/discos_plantadeira.py").read())
+    exec(open("implementos-agricolas/implementos_agricolas.py").read())

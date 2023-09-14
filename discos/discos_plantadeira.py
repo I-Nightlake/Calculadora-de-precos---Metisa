@@ -1,4 +1,5 @@
 import os
+import subprocess
 
 
 def percent(expression):
@@ -13,13 +14,18 @@ def comma_to_point(expression):
     return eval(expression)
 
 
+def ctrlc(txt):
+    cmd = 'echo ' + txt.strip() + '|clip'
+    return subprocess.check_call(cmd, shell=True)
+
+
 os.system("cls")
 
-print("---Laminas Moto---")
+print("---Discos Plantadeira---")
 print()
-print("Desconto aplicado = -23% -15% -13,50% -##% -5,70% +3,25%")
+print("Desconto aplicado = -7% -20% -20% -##% -10,75% +3,25%")
 print()
-print("Desconto sugerido: 43,10%")
+print("Desconto sugerido: 48%")
 print()
 print("00 - Voltar")
 print()
@@ -39,7 +45,7 @@ while True:
         break
 
 if desconto == "00":
-    exec(open("laminas/laminas.py").read())
+    exec(open("discos/discos.py").read())
 
 desconto_format = str(comma_to_point(desconto))
 
@@ -53,7 +59,7 @@ while True:
         if "00000001" <= valor <= "09999999":
             raise ValueError("Numeros nao podem comecar com 0, sendo este um numero inteiro")
         if valor == "00":
-            exec(open("laminas/laminas_moto.py").read())
+            exec(open("discos/discos_plantadeira.py").read())
     except ValueError as ve2:
         print(ve2)
     else:
@@ -61,19 +67,19 @@ while True:
 
 valor_format = str(comma_to_point(valor))
 
-desc1 = percent(valor_format + "*23%")
+desc1 = percent(valor_format + "*7%")
 posdesc1 = float(valor_format) - desc1
 posdesc1str = str(posdesc1)
-desc2 = percent(posdesc1str + "*15%")
+desc2 = percent(posdesc1str + "*20%")
 posdesc2 = posdesc1 - desc2
 posdesc2str = str(posdesc2)
-desc3 = percent(posdesc2str + "*13.50%")
+desc3 = percent(posdesc2str + "*20%")
 posdesc3 = posdesc2 - desc3
 posdesc3str = str(posdesc3)
 desc4 = percent(posdesc3str + "*" + desconto_format + "%")
 posdesc4 = posdesc3 - desc4
 posdesc4str = str(posdesc4)
-desc5 = percent(posdesc4str + "*5.70%")
+desc5 = percent(posdesc4str + "*10.75%")
 posdesc5 = posdesc4 - desc5
 posdesc5str = str(posdesc5)
 ipi = percent(posdesc5str + "*3.25%")
@@ -92,7 +98,7 @@ while True:
     try:
         avista = input("->")
         if avista == "00":
-            exec(open("laminas/laminas_moto.py").read())
+            exec(open("discos/discos_plantadeira.py").read())
         if avista == "1" or avista == "2":
             break
         else:
@@ -103,9 +109,10 @@ while True:
 if avista == "1":
     print()
     print("Valor Unitario: R$ " + posipiroundstr)
+    ctrlc("Valor Unitário: R$ " + posipiroundstr)
     print()
     input("Pressione enter para voltar")
-    exec(open("laminas/laminas_moto.py").read())
+    exec(open("discos/discos_plantadeira.py").read())
 
 if avista == "2":
     valor_avista = percent(posipiroundstr + "*3%")
@@ -114,6 +121,7 @@ if avista == "2":
     posvalor_avistaroundstr = str(posvalor_avistaround)
     print()
     print("Valor Unitario: R$ " + posvalor_avistaroundstr)
+    ctrlc("Valor Unitário: R$ " + posvalor_avistaroundstr)
     print()
     input("Pressione enter para voltar")
-    exec(open("laminas/laminas_moto.py").read())
+    exec(open("discos/discos_plantadeira.py").read())
