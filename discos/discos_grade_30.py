@@ -14,7 +14,7 @@ def comma_to_point(expression):
     return eval(expression)
 
 
-def ctrlc(txt):
+def copy_to_paste(txt):
     cmd = 'echo ' + txt.strip() + '|clip'
     return subprocess.check_call(cmd, shell=True)
 
@@ -109,7 +109,24 @@ while True:
 if avista == "1":
     print()
     print("Valor Unitario: R$ " + posipiroundstr)
-    ctrlc("Valor Unitário: R$ " + posipiroundstr)
+    print()
+    print("Deseja copiar o valor para colar?")
+    print()
+    print("1 - Sim")
+    print()
+    print("2 - Nao")
+    print()
+    while True:
+        try:
+            copiar = input("->")
+            if copiar == "1":
+                copy_to_paste("Valor Unitario: R$ " + posipiroundstr)
+            if copiar == "1" or copiar == "2":
+                break
+            else:
+                raise ValueError("Opcao invalida, tente novamente...")
+        except ValueError as ve3:
+            print(ve3)
     print()
     input("Pressione enter para voltar")
     exec(open("discos/discos_grade_30.py").read())
@@ -121,7 +138,24 @@ if avista == "2":
     posvalor_avistaroundstr = str(posvalor_avistaround)
     print()
     print("Valor Unitario: R$ " + posvalor_avistaroundstr)
-    ctrlc("Valor Unitário: R$ " + posvalor_avistaroundstr)
+    print()
+    print("Deseja copiar o valor para colar?")
+    print()
+    print("1 - Sim")
+    print()
+    print("2 - Nao")
+    print()
+    while True:
+        try:
+            copiar = input("->")
+            if copiar == "1":
+                copy_to_paste("Valor Unitario: R$ " + posvalor_avistaroundstr)
+            if copiar == "1" or copiar == "2":
+                break
+            else:
+                raise ValueError("Opcao invalida, tente novamente...")
+        except ValueError as ve3:
+            print(ve3)
     print()
     input("Pressione enter para voltar")
     exec(open("discos/discos_grade_30.py").read())

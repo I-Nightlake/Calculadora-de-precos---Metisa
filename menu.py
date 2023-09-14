@@ -1,6 +1,6 @@
 import os
 
-os.system("title " + "Calculadora de Precos - Metisa - 1.3")
+os.system("title " + "Calculadora de Precos - Metisa - 1.4")
 os.system("cls")
 
 print("---Menu Principal---")
@@ -44,7 +44,7 @@ if opcao == "5":
 
 if opcao == "6":
     os.system("cls")
-    print("Calculadora de precos - Metisa- 1.3")
+    print("Calculadora de precos - Metisa- 1.4")
     print()
     print("Criada e idealizada por Italo Miguel Souza")
     print()
