@@ -39,3 +39,7 @@ Ver 1.4:
 
 - Adicionada a opção de copiar o valor do item para colar posteriormente.
 
+Ver 1.4.1:
+
+- Alterada a forma que são demonstrados os preços, informando o preço com e sem IPI agora.
+
