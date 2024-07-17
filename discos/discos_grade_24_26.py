@@ -53,6 +53,8 @@ while True:
             raise ValueError("Valor invalido, tente novamente...")
         if "00000001" <= valor <= "09999999":
             raise ValueError("Numeros nao podem comecar com 0, sendo este um numero inteiro")
+        if valor == "0":
+            raise ValueError("O valor do item nao pode ser 0")
         if valor == "00":
             exec(open("discos/discos_grade_24_26.py").read())
     except ValueError as ve2:
