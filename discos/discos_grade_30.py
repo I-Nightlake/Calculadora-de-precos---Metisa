@@ -117,6 +117,8 @@ if avista == "1":
     print()
     print("2 - Nao")
     print()
+    print("00 - Voltar")
+    print()
     while True:
         try:
             copiar = input("->")
@@ -124,6 +126,8 @@ if avista == "1":
             linha12 = ("Valor Unitario: R$ " + posipiroundstr + ". (Com IPI de 3,25% incluso)")
             if copiar == "1":
                 clipboard.copy(linha11 + "\n" + linha12)
+            if copiar == "00":
+                exec(open("discos_grade_30.py").read())
             if copiar == "1" or copiar == "2":
                 break
             else:
@@ -153,6 +157,8 @@ if avista == "2":
     print()
     print("2 - Nao")
     print()
+    print("00 - Voltar")
+    print()
     while True:
         try:
             copiar = input("->")
@@ -160,6 +166,8 @@ if avista == "2":
                 linha21 = ("Valor Unitario: R$ " + posvalor_avistasemipiroundstr + ". (Sem IPI)")
                 linha22 = ("Valor Unitario: R$ " + posvalor_avistaroundstr + ". (Com IPI de 3,25% incluso)")
                 clipboard.copy(linha21 + "\n" + linha22)
+            if copiar == "00":
+                exec(open("discos_grade_30.py").read())
             if copiar == "1" or copiar == "2":
                 break
             else:
