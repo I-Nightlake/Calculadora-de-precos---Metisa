@@ -42,4 +42,5 @@ Ver 1.4:
 Ver 1.4.1:
 
 - Alterada a forma que são demonstrados os preços, informando o preço com e sem IPI agora.
+- Adicionada a possiblidade de voltar quando perguntado se deseja copiar ou não o valor.
 
