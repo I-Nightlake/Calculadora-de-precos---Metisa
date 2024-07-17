@@ -1,5 +1,5 @@
 import os
-import subprocess
+import clipboard
 
 
 def percent(expression):
@@ -12,11 +12,6 @@ def comma_to_point(expression):
     if "," in expression:
         expression = expression.replace(",", ".")
     return eval(expression)
-
-
-def copy_to_paste(txt):
-    cmd = 'echo ' + txt.strip() + '|clip'
-    return subprocess.check_call(cmd, shell=True)
 
 
 os.system("cls")
@@ -82,6 +77,9 @@ posdesc4str = str(posdesc4)
 desc5 = percent(posdesc4str + "*10.75%")
 posdesc5 = posdesc4 - desc5
 posdesc5str = str(posdesc5)
+semipi = posdesc5
+semipiround = round(semipi, ndigits=2)
+semipiroundstr = str(semipiround)
 ipi = percent(posdesc5str + "*3.25%")
 posipi = posdesc5 + ipi
 posipiround = round(posipi, ndigits=2)
@@ -108,7 +106,8 @@ while True:
 
 if avista == "1":
     print()
-    print("Valor Unitario: R$ " + posipiroundstr)
+    print("Valor Unitario: R$ " + semipiroundstr + ". (Sem IPI)")
+    print("Valor Unitario: R$ " + posipiroundstr + ". (Com IPI de 3,25% incluso)")
     print()
     print("Deseja copiar o valor para colar?")
     print()
@@ -119,8 +118,10 @@ if avista == "1":
     while True:
         try:
             copiar = input("->")
+            linha11 = ("Valor Unitario: R$ " + semipiroundstr + ". (Sem IPI)")
+            linha12 = ("Valor Unitario: R$ " + posipiroundstr + ". (Com IPI de 3,25% incluso)")
             if copiar == "1":
-                copy_to_paste("Valor Unitario: R$ " + posipiroundstr)
+                clipboard.copy(linha11 + "\n" + linha12)
             if copiar == "1" or copiar == "2":
                 break
             else:
@@ -132,12 +133,17 @@ if avista == "1":
     exec(open("discos/discos_grade_30.py").read())
 
 if avista == "2":
+    valor_avistasemipi = percent(semipiroundstr + "*3%")
+    posvalor_avistasemipi = semipi + valor_avistasemipi
+    posvalor_avistasemipiround = round(posvalor_avistasemipi, ndigits=2)
+    posvalor_avistasemipiroundstr = str(posvalor_avistasemipiround)
     valor_avista = percent(posipiroundstr + "*3%")
     posvalor_avista = posipi + valor_avista
     posvalor_avistaround = round(posvalor_avista, ndigits=2)
     posvalor_avistaroundstr = str(posvalor_avistaround)
     print()
-    print("Valor Unitario: R$ " + posvalor_avistaroundstr)
+    print("Valor Unitario: R$ " + posvalor_avistasemipiroundstr + ". (Sem IPI)")
+    print("Valor Unitario: R$ " + posvalor_avistaroundstr + ". (Com IPI de 3,25% incluso)")
     print()
     print("Deseja copiar o valor para colar?")
     print()
@@ -149,7 +155,9 @@ if avista == "2":
         try:
             copiar = input("->")
             if copiar == "1":
-                copy_to_paste("Valor Unitario: R$ " + posvalor_avistaroundstr)
+                linha21 = ("Valor Unitario: R$ " + posvalor_avistasemipiroundstr + ". (Sem IPI)")
+                linha22 = ("Valor Unitario: R$ " + posvalor_avistaroundstr + ". (Com IPI de 3,25% incluso)")
+                clipboard.copy(linha21 + "\n" + linha22)
             if copiar == "1" or copiar == "2":
                 break
             else:
